@@ -4,6 +4,7 @@
       <meta charset="utf-8" />
       <title>Radio Group Example - jQuery in Action, 3rd edition</title>
       <link rel="stylesheet" href="../css/main.css"/>
+      <script src="js/script.js"></script>
       <style>
          #result
          {
@@ -40,10 +41,8 @@
 
       <script src="../js/jquery-1.11.3.min.js"></script>
       <script>
-         jQuery('#which-button').click(function () {
-            var checkedValue = jQuery('input:radio[name="some-radio-group"]:checked').val();
-            jQuery('#result').text(checkedValue);
-         }).click();
+         $('#result').html(" - ")
+         $('#which-button').click(radioButtonExploration);
       </script>
    </body>
 </html>
